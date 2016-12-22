@@ -7,7 +7,8 @@ output-virtualbox-iso
 
 case $1 in
     clean)
-	for temp_file in temp_files;do
+	for temp_file in $temp_files; do
+	    echo "rm -rf $temp_file"
 	    rm -rf $temp_file
 	done
 	;;
