@@ -1,4 +1,4 @@
-TMP=packer_cache
+TMP=packer_cache output-virtualbox-iso
 
 all:ansible packer
 
