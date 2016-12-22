@@ -1,1 +1,5 @@
 * CentOS7的packer脚本
+
+项目是在 [geerlingguy](https://github.com/geerlingguy/packer-centos-7) 基础上改过来的。
+
+用来构建我自己的Vagrant box。
