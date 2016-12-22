@@ -10,3 +10,4 @@ ansible 有一个类似rubygems的工具 叫 ansible-galaxy，可以通过他来
 
 这篇文字介绍的挺好(http://blog.chinaunix.net/uid-28458801-id-3452277.html)。
 排在文件前面的第一个target就是用make执行的时候的默认target。
+* 使用在项目中使用Makefile，不过不知道为什么使用make总是无法重构，所以放弃，改为使用build.sh
