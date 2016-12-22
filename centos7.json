@@ -1,6 +1,6 @@
 {
     "variables" : {
-	"ISO_LOCAL_URL": "~/Softwares/operating_systems/CentOS-7-x86_64-Minimal-1611.iso",
+	"ISO_LOCAL_URL": "file:///Users/tangjun/Softwares/operating_systems/CentOS-7-x86_64-Minimal-1611.iso",
 	"ISO_REMOTE_URL": "http://isoredirect.centos.org/centos/7/isos/x86_64/CentOS-7-x86_64-Minimal-1611.iso",
 	"ISO_MD5": "d2ec6cfa7cf6d89e484aa2d9f830517c",
 	"DISK_SIZE": "81920",

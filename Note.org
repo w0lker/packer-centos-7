@@ -3,3 +3,10 @@
 * 使用 ansible 笔记
 
 ansible 有一个类似rubygems的工具 叫 ansible-galaxy，可以通过他来批量安装一些别人或者我自己写的安装脚本。
+
+* Makefile 中 .PHONY 的理解
+用来指定特定的目标是一个伪目标，就是没有其它依赖的目标。该目标中可能只有规则
+如常见的 clean 目标
+
+这篇文字介绍的挺好(http://blog.chinaunix.net/uid-28458801-id-3452277.html)。
+排在文件前面的第一个target就是用make执行的时候的默认target。
