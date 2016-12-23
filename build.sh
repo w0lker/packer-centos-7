@@ -11,13 +11,18 @@ case $1 in
 	    echo "rm -rf $temp_file"
 	    rm -rf $temp_file
 	done
+	rm -rf build
 	;;
     make)
+	if [ ! -d "build" ]; then
+	    echo "mkdir build"
+	    mkdir build
+	fi
 	ansible-galaxy install -r requirements.txt
 	packer build centos7.json
 	;;
     install)
-	vagrant box add w0lker/centos7 *-centos7.box
+	vagrant box add w0lker/centos7 build/virtualbox-centos7.box
 	;;
     *)
 	echo "Usage: build.sh [make|install|clean]"

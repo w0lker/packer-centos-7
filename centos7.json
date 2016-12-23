@@ -21,8 +21,7 @@
 	    "type": "ansible-local",
 	    "playbook_file": "ansible/main.yml",
 	    "role_paths": [
-		"{{user `ANSIBLE_ETC`}}/roles/geerlingguy.packer-rhel",
-		"{{user `ANSIBLE_ETC`}}/roles/geerlingguy.nfs"
+		"{{user `ANSIBLE_ETC`}}/roles/geerlingguy.packer-rhel"
 	    ]
 	},
 	{
@@ -64,7 +63,7 @@
     ],
     "post-processors": [
 	{
-	    "output": "{{.Provider}}-centos7.box",
+	    "output": "build/{{.Provider}}-centos7.box",
 	    "type": "vagrant"
 	}
     ]
