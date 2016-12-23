@@ -22,6 +22,7 @@ case $1 in
 	packer build centos7.json
 	;;
     install)
+	vagrant box remove w0lker/centos7
 	vagrant box add w0lker/centos7 build/virtualbox-centos7.box
 	;;
     *)
